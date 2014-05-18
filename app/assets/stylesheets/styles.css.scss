@@ -1,0 +1,137 @@
+@import "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700,700italic);
+/*Reset default CSS*/ 
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url(bg-chop.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	color: white;
+	font-weight: 300;
+	text-align: center;
+
+} 
+
+.container {
+	position: absolute;
+	height: 60%x;
+	width: 75%;
+	left: 50%;
+	top: 25%;
+	margin-top: -10.5px;
+	margin-left: -37.5%;
+	background-color: black;
+	background-opacity: .5;
+	padding-bottom: 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+.header {
+	margin-bottom: 40px;
+
+}
+
+.content {
+
+
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 60px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 24px;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 20px;
+
+}
+
+.text-field {
+	display: block;
+	margin-left: 28%;
+	margin-right: 25%;
+	width: 44%;
+	padding: 0 14px;
+	height: 55px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 2px solid #bdc3c7;
+	border-radius: 4px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: black;
+	font-weight: 700;
+
+
+}
+
+.delivery-area {
+	width: 320px;
+	margin: auto;
+
+}
+
+.button {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #2ecc71;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 20px 0;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.delivery-area-column-left {
+	float: left;
+	width: 20%;
+	margin-left: 30%;
+}
+
+.delivery-area-column-right {
+	float: left;
+	width: 20%;
+	margin-left: 2%;
+}
+
+.delivery-area-controls {
+	margin-left: -2%;
+}
+
+.delivery-area-column-center {
+	float: left;
+	width: 30%;
+	margin-left: 36%;
+}
+
+#error_explanation {
+	color: #FEC636;
+	font-weight: 700;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Groceries that you'll actually eat</title>
+		<link href='styles.css' rel='stylesheet' type='text/css'>
+		<script src='application.js' type='text/javascript'></script>
+		<meta charset='utf-8'>
+	</head>
+
+
+	<body>
+		<div class="container">	
+			<div header class="header">
+				<h1>CHOP CHOP. That's what we do!</h1>
+				<h2>Enjoy Fresh Cut &amp; Washed Organic Veggies &amp; Fruits to Your Door.</h2>
+			</div>
+
+			<div content class="content">	
+				<h3>Deliver Me Fresh, Simple Nourishment...</h3>
+			</div>
+			<%= form_for :beta_request_user, url: beta_request_users_path, class: "delivery-area" do |f| %>
+
+			 <% if @beta_request_user.errors.any? %>
+			    <div id="error_explanation">
+			      <h2>
+			        You have to enter your Zip Code to see packages!
+			      </h2>
+			      <ul>
+			        <% @beta_request_user.errors.full_messages.each do |msg| %>
+			         
+			        <% end %>
+			      </ul>
+			    </div>
+			  <% end %>			
+			  <div>
+			    <%= f.text_field :zip, class: "text-field", type: "text", placeholder: placeholder="Enter Your Zip Code to See Options" %>
+			  </div>
+				<div class="delivery-area-controls">
+						<div class="delivery-area-column-left">				    
+					   	<%= f.submit "To My Office", class: "button", value: "To My Office", name: "beta_request_user[delivery_type]" %>
+					  </div>
+				    <div class="delivery-area-column-right">
+				    <%= f.submit "To My Home", class: "button", value: "To My Home", name: "beta_request_user[delivery_type]" %>
+			    	</div>
+			    </div>
+		    </div>
+			<% end %>			
+		</div>
+	</body>
+</html>
+
+
+
+<!-- <form action class="delivery-area">
+				<input class="text-field" type="text" placeholder="Enter Your Zip Code to See Options"/>
+				<div class="delivery-area-controls">
+					<div class="delivery-area-column">
+						<button class="button">To My Office</button>
+					</div>
+					<div class="delivery-area-column">
+						<button class="button">To My Home</button>
+					</div>
+				</div>
+			</form> -->
+
+
+			
+
+<!-- <h1>MealsBy.Me</h1>
+<h2>Groceries You'll Actually Eat</h2>
+<p>Enjoy Fresh Cut & Washed Organic Veggies & Fruits to Your Door.</p>
+
+<h3>Help me eat healthy, in an easy way...</h3>
+<%= form_for :article do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<h4>Organic Fruits and Veggies</h4>
+<h4>Vinegar Washed</h4>
+<h4>Sanitary Chopping and Packing</h4>
+<h4>Next Day Delivery</h4>
+
+<p>NOTE: Find me in app/views/pages/home.html.erb</p> -->
+
+<!-- <input label"Enter Your ZipCode"> </input>
+<button>
+	To My Home
+</button>
+
+<button>
+	To My Office
+</button> -->
+
+
+
+

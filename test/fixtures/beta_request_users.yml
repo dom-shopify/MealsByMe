@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zip: MyString
+  email: MyString
+  delivery_type: MyString
+  signup_date: 2014-05-15 23:24:22
+  uuid: 
+
+two:
+  zip: MyString
+  email: MyString
+  delivery_type: MyString
+  signup_date: 2014-05-15 23:24:22
+  uuid: 
