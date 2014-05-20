@@ -19,18 +19,18 @@
 			<div content class="content">	
 				<h3>We'll send you some free berries when we launch!</h3>
 			</div>
-			<%= form_for :beta_request_user, url: beta_request_users_path, class: "delivery-area" do |f| %>
+			<%= form_for @beta_request_user, class: "delivery-area" do |f| %>
 			 
-			  <div>
+			  <div> 
 			    <%= f.text_field :email, class: "text-field", type: "email", placeholder: placeholder="Enter Your Email For Your Coupon" %>
 			  </div>
 				<div class="delivery-area-controls">
 						<div class="delivery-area-column-center">				    
-					   	<%= f.submit "Claim Free Berries", class: "button", value: "Claim Free Berries", name: "beta_request_user[email]" %>
+					   	<%= f.submit "Claim Free Berries", class: "button" %>
 					  </div>
 			    </div>
 		    </div>
-					<% end %>			
+		<% end %>			
 		</div>
 	</body>
 </html>

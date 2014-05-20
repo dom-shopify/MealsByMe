@@ -20,13 +20,22 @@ class BetaRequestUsersController < ApplicationController
 
   def update
 
-    @beta_request_user = BetaRequestUser.find_by(:id)
-    BetaRequestUser.update(:email)
+    #@beta_request_user = BetaRequestUser.find_by(:id)
+    #BetaRequestUser.update(:email)
 
-    #@beta_request_user = BetaRequestUser.update(params[:id])
-    #if @beta_request_user.update_attributes(params[:email])
-    #  redirect_to edit_beta_request_user_path
-    #  end
+    @beta_request_user = BetaRequestUser.find(params[:id])
+
+    if @beta_request_user.update_attributes(page_params)
+      session[:beta_request_user_id] = params[:id]
+      redirect_to new_confirm_beta_request_user_path(@beta_request_user)
+    end
+  end
+
+  def confirm
+  end
+
+  def new_confirm
+    @beta_request_user = BetaRequestUser.find(session[:beta_request_user_id])
   end
 
   def show

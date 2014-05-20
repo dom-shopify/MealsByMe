@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '~> 3.1.1.1'
-
-gem 'sqlite3'
+gem 'pg', group: :production
+#gem 'sqlite3', group: :development
 gem 'activerecord-jdbcmysql-adapter', platform: :jruby
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -33,4 +33,4 @@ gem 'sdoc', '~> 0.4.0',
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-$end
+

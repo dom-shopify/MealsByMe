@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   root to: 'beta_request_users#new'
   resources :beta_request_users do
+    member do 
+      post 'confirm'
+      get 'new_confirm'
+    end 
   end
 
 
