@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '~> 3.1.1.1'
-gem 'pg', group: :production
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 gem 'sqlite3', group: :development
 # gem 'activerecord-jdbcmysql-adapter', platform: :jruby
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
