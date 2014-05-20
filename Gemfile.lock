@@ -103,7 +103,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.9)
     therubyrhino (2.0.3)
       therubyrhino_jar (>= 1.7.3)
     therubyrhino_jar (1.7.4)
@@ -136,7 +135,6 @@ DEPENDENCIES
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
-  sqlite3
   therubyrhino
   turbolinks
   uglifier (>= 1.3.0)
