@@ -15,7 +15,7 @@ html {
 body {
 	background-image: url(bg-chop.jpg);
 	background-position: center;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 	background-size: cover;
 	height: 100%;
 	font-family: 'Lato', sans-serif;
@@ -31,8 +31,9 @@ body {
 	width: 75%;
 	left: 50%;
 	top: 25%;
-	margin-top: -10.5px;
+	margin-top: -147.5px;
 	margin-left: -37.5%;
+	margin-bottom: 250px;
 	padding-top: 25px;
 	background-color: rgba(black, .65);
 	padding-bottom: 50px;
@@ -135,3 +136,60 @@ h3 {
 	font-weight: 700;
 	margin-bottom: 20px;
 }
+
+.inside-container{
+	display: block;
+}
+.price-table{
+	display: table;
+	width:100%;
+	list-style: none;
+}
+
+.items-header {
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+	/*margin-bottom: 20px;
+	margin-left: 105px;*/
+	color: orange;
+	list-style: none;
+
+
+}
+
+.item-view{
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 205px;
+	list-style: none;
+
+}
+.item-media {
+	border-radius: 4px;	
+
+}
+
+.item-info{
+	font-weight: 700;
+	font-size: 16px;
+	color: orange;
+	
+}
+
+.small-price{
+	font-weight: 700;
+	font-size: 12px;
+	color: white;
+
+}
+
+
+.large-price{
+	font-weight: 700;
+	font-size: 12px;
+	color: white;
+	
+}
+
