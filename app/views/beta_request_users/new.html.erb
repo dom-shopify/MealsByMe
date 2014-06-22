@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
-		<title>Groceries that you'll actually eat</title>
+		<title>Find an Agent Like You</title>
 		<link href='styles.css' rel='stylesheet' type='text/css'>
 		<script src='application.js' type='text/javascript'></script>
 		<meta charset='utf-8'>
@@ -22,53 +22,14 @@
 	<body>
 		<div class="container">	
 			<div header class="header">
-				<h1>CHOP CHOP. That's what we do!</h1>
-				<h2>Enjoy Fresh Cut &amp; Washed Organic Veggies &amp; Fruits Delivered to You.</h2>
+				<h1>Find an Agent You <important>REALLY </important>like</h1>
+				<h2>You can browse hundreds of agents based on similar lifestyle and interests. 
+				</br>We'll suggest the ones who have the most similarity and make it free and easy to reach out.</h2>
 			</div>
-			<div class="inside-container">
-			<div class="price-table">
-				<ul>
-				 		<li class="items-header"> . . . A few of our tasty treats . . . </li>
-						<li class="item-view">
-							<div class="item-media"> <img src="http://i1371.photobucket.com/albums/ag315/Dominic_Nique_Coryell/bucket-watermelon_zps93d82ce0.jpg" alt="Watermelon Image">
-							<div class="item-info">Chopped Watermelon
-							<div class="small-price"> Small (1/2 lb) = $4	</div>
-							<div class="large-price"> Large (full lb) = $6	</div>					
-							</div>
-							</div>
-						</li>
-						<li class="item-view">
-							<div class="item-media"> <img src="http://i1371.photobucket.com/albums/ag315/Dominic_Nique_Coryell/bucket-mango_zpsa7c203d8.jpg" alt="Mango Image">
-							<div class="item-info">Sliced Mango
-							<div class="small-price"> Small (1/2 lb) = $5	</div>
-							<div class="large-price"> Large (full lb) = $9	</div>					
-							</div>
-							</div>
-						</li>
-						<li class="item-view">
-							<div class="item-media"> <img src="http://i1371.photobucket.com/albums/ag315/Dominic_Nique_Coryell/bucket-peppers2_zps370504e7.jpg" alt="Peppers Image">
-							<div class="item-info">Chopped Peppers
-							<div class="small-price"> Small (1/2 lb) = $6	</div>
-							<div class="large-price"> Large (full lb) = $10	</div>					
-							</div>
-							</div>
-						</li>
-						<li class="item-view">
-							<div class="item-media"> <img src="http://i1371.photobucket.com/albums/ag315/Dominic_Nique_Coryell/bucket-avocado_zpsde92ecca.jpg" alt="Avocado Image">
-							<div class="item-info">Diced Avocado
-							<div class="small-price"> Small (1/2 lb) = $7	</div>
-							<div class="large-price"> Large (full lb) = $13	</div>		
-						<!-- <li>All orders of $30 or more have a reduced delivery fee of $3.99!</li>			 -->
-							</div>
-							</div>
-						</li>
-					
-				</ul>
-			</div>
-			</div>
+			
 
 			<div content class="content">	
-				<h3>Deliver Me Fresh, Simple Nourishment...</h3>
+				<h3>Help me match an agent to my needs</h3>
 			</div>
 			<%= form_for :beta_request_user, url: beta_request_users_path, class: "delivery-area" do |f| %>
 
@@ -85,14 +46,14 @@
 			    </div>
 			  <% end %>			
 			  <div>
-			    <%= f.text_field :zip, class: "text-field", type: "text", placeholder: placeholder="Enter Your Zip Code to See Options" %>
+			    <%= f.text_field :zip, class: "text-field", type: "text", placeholder: placeholder="Enter the Zip where you currently live" %>
 			  </div>
 				<div class="delivery-area-controls">
 						<div class="delivery-area-column-left">				    
-					   	<%= f.submit "To My Office", class: "button", value: "To My Office", name: "beta_request_user[delivery_type]" %>
+					   	<%= f.submit "To My Office", class: "button", value: "Selling My Home", name: "beta_request_user[delivery_type]" %>
 					  </div>
 				    <div class="delivery-area-column-right">
-				    <%= f.submit "To My Home", class: "button", value: "To My Home", name: "beta_request_user[delivery_type]" %>
+				    <%= f.submit "To My Home", class: "button", value: "Buying A Home", name: "beta_request_user[delivery_type]" %>
 			    	</div>
 			    </div>
 		    </div>

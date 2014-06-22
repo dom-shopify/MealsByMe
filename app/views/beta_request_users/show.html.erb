@@ -39,21 +39,21 @@ fb_param.currency = 'USD';
 	<body>
 		<div class="container">	
 			<div header class="header">
-				<h1>That's Bananas!</h1> <!-- <img src="banana_smiling.png" width="125" height="125"/> -->
-				<h2>We're Not There Yet, But we will be soon.</h2>
+				<h1>No One Home Yet!</h1> <!-- <img src="banana_smiling.png" width="125" height="125"/> -->
+				<h2>We're not yet matching agents in your area, but will be soon.</h2>
 			</div>
 
 			<div content class="content">	
-				<h3>We'll send you some free berries when we launch!</h3>
+				<h3>We can notify you once we launch.</h3>
 			</div>
 			<%= form_for @beta_request_user, class: "delivery-area" do |f| %>
 			 
 			  <div> 
-			    <%= f.text_field :email, class: "text-field", type: "email", placeholder: placeholder="Enter Your Email For Your Coupon" %>
+			    <%= f.text_field :email, class: "text-field", type: "email", placeholder: placeholder="Enter Your Email For Reminder" %>
 			  </div>
 				<div class="delivery-area-controls">
 						<div class="delivery-area-column-center">				    
-					   	<%= f.submit "Claim Free Berries", class: "button" %>
+					   	<%= f.submit "Remind Me", class: "button" %>
 					  </div>
 			    </div>
 		    </div>
