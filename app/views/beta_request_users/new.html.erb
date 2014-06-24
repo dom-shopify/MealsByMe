@@ -22,14 +22,14 @@
 	<body>
 		<div class="container">	
 			<div header class="header">
-				<h1>Find an Agent You <important>REALLY </important>like</h1>
-				<h2>You can browse hundreds of agents based on similar lifestyle and interests. 
-				</br>We'll suggest the ones who have the most similarity and make it free and easy to reach out.</h2>
+				<h1>Find an Agent </br>Like You</h1>
+				<h2>Instantly browse agents with similar </br>lifestyle and interests.  
+				</br>Connect for FREE with a click.</h2>
 			</div>
 			
 
 			<div content class="content">	
-				<h3>Help me match an agent to my needs</h3>
+				<h3>Start My Match...</h3>
 			</div>
 			<%= form_for :beta_request_user, url: beta_request_users_path, class: "delivery-area" do |f| %>
 
@@ -50,10 +50,10 @@
 			  </div>
 				<div class="delivery-area-controls">
 						<div class="delivery-area-column-left">				    
-					   	<%= f.submit "To My Office", class: "button", value: "Selling My Home", name: "beta_request_user[delivery_type]" %>
+					   	<%= f.submit "Selling My Home", class: "button", value: "Selling My Home", name: "beta_request_user[delivery_type]" %>
 					  </div>
 				    <div class="delivery-area-column-right">
-				    <%= f.submit "To My Home", class: "button", value: "Buying A Home", name: "beta_request_user[delivery_type]" %>
+				    <%= f.submit "Buying A Home", class: "button", value: "Buying A Home", name: "beta_request_user[delivery_type]" %>
 			    	</div>
 			    </div>
 		    </div>
